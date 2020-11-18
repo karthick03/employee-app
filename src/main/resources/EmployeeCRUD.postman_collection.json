@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "bde27af1-0fb5-43c4-9f80-f5bae3c251b3",
+		"name": "EmployeeCRUD",
+		"description": "Employee CRUD Collection :)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Joe\",\r\n    \"lastName\": \"J\",\r\n    \"email\": \"joe@abc.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/employee/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/employee/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\": \"bd47ec5d-d91e-44ae-ab56-a23733ba9810\",\r\n    \"firstName\": \"Joe2\",\r\n    \"lastName\": \"J\",\r\n    \"email\": \"joe2@abc.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/employee/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\": \"bd47ec5d-d91e-44ae-ab56-a23733ba9810\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/employee/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/employee/get/bd47ec5d-d91e-44ae-ab56-a23733ba9810",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"get",
+						"bd47ec5d-d91e-44ae-ab56-a23733ba9810"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
